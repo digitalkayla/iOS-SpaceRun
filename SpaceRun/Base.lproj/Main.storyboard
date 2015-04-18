@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jab-rc-6gn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="maK-i9-Uhn"/>
+                        <viewControllerLayoutGuide type="bottom" id="khH-OB-KpY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="720"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="rs3-yw-xjK">
+            <objects>
+                <viewController id="Jab-rc-6gn" customClass="StartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ntt-HH-3lW"/>
+                        <viewControllerLayoutGuide type="bottom" id="v4I-ee-EhU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bq7-mR-zGF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DL0-QU-xMU">
+                                <rect key="frame" x="282" y="546" width="36" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" identifier="PlayGameSegue" id="2lD-lK-aL0"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-Vh-Gc7">
+                                <rect key="frame" x="81" y="286" width="438" height="29"/>
+                                <segments>
+                                    <segment title="Easy"/>
+                                    <segment title="Hard"/>
+                                    <segment title="?!#@&amp; (Insane)"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Run" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXR-IF-naw">
+                                <rect key="frame" x="214" y="20" width="173" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ve-tz-B4R">
+                                <rect key="frame" x="16" y="67" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5mp-Vh-Gc7" secondAttribute="centerX" id="2Kg-ls-R2g"/>
+                            <constraint firstAttribute="centerX" secondItem="DL0-QU-xMU" secondAttribute="centerX" id="4jC-pM-Z2V"/>
+                            <constraint firstAttribute="centerX" secondItem="cXR-IF-naw" secondAttribute="centerX" id="7tl-rB-d5w"/>
+                            <constraint firstItem="3ve-tz-B4R" firstAttribute="top" secondItem="cXR-IF-naw" secondAttribute="bottom" constant="8" id="cRO-Bs-78l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5mp-Vh-Gc7" secondAttribute="trailing" constant="65" id="dvo-h6-lEr"/>
+                            <constraint firstItem="5mp-Vh-Gc7" firstAttribute="leading" secondItem="Bq7-mR-zGF" secondAttribute="leadingMargin" constant="65" id="iDn-qo-bjQ"/>
+                            <constraint firstItem="3ve-tz-B4R" firstAttribute="leading" secondItem="Bq7-mR-zGF" secondAttribute="leadingMargin" id="iHE-ZG-f9C"/>
+                            <constraint firstAttribute="centerY" secondItem="5mp-Vh-Gc7" secondAttribute="centerY" id="lMW-ZQ-9oj"/>
+                            <constraint firstItem="3ve-tz-B4R" firstAttribute="trailing" secondItem="Bq7-mR-zGF" secondAttribute="trailingMargin" id="mbs-zo-22l"/>
+                            <constraint firstItem="v4I-ee-EhU" firstAttribute="top" secondItem="DL0-QU-xMU" secondAttribute="bottom" constant="20" id="sob-cC-Qkh"/>
+                            <constraint firstItem="cXR-IF-naw" firstAttribute="top" secondItem="ntt-HH-3lW" secondAttribute="bottom" id="xZG-En-n1e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="difficulty" destination="5mp-Vh-Gc7" id="j8E-3l-eNT"/>
+                        <outlet property="highScoreLabel" destination="3ve-tz-B4R" id="IE4-KH-qii"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qr3-07-g7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="720"/>
+        </scene>
+    </scenes>
+</document>

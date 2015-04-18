@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		694A95541ADF2D17008578B8 /* OpeningScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 694A95531ADF2D17008578B8 /* OpeningScene.m */; };
+		694A95581ADF3889008578B8 /* GameOverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 694A95571ADF3889008578B8 /* GameOverNode.m */; };
+		694A955C1ADFD65D008578B8 /* HUDNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 694A955B1ADFD65D008578B8 /* HUDNode.m */; };
+		6997D0281AD6172A002389B5 /* shipExplode.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6997D0271AD6172A002389B5 /* shipExplode.m4a */; };
+		6997D02A1AD61733002389B5 /* shoot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6997D0291AD61733002389B5 /* shoot.m4a */; };
+		6997D02C1AD6173B002389B5 /* obstacleExplode.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6997D02B1AD6173B002389B5 /* obstacleExplode.m4a */; };
+		69D809B41AD5F4DC004CD596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D809B31AD5F4DC004CD596 /* main.m */; };
+		69D809B71AD5F4DC004CD596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D809B61AD5F4DC004CD596 /* AppDelegate.m */; };
+		69D809BA1AD5F4DC004CD596 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D809B91AD5F4DC004CD596 /* GameScene.m */; };
+		69D809BC1AD5F4DC004CD596 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69D809BB1AD5F4DC004CD596 /* GameScene.sks */; };
+		69D809BF1AD5F4DC004CD596 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D809BE1AD5F4DC004CD596 /* GameViewController.m */; };
+		69D809C21AD5F4DC004CD596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D809C01AD5F4DC004CD596 /* Main.storyboard */; };
+		69D809C41AD5F4DC004CD596 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D809C31AD5F4DC004CD596 /* Images.xcassets */; };
+		69D809C71AD5F4DC004CD596 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D809C51AD5F4DC004CD596 /* LaunchScreen.xib */; };
+		69D809D31AD5F4DC004CD596 /* SpaceRunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D809D21AD5F4DC004CD596 /* SpaceRunTests.m */; };
+		69E97AEA1ADB5EF3007AFD48 /* StarFieldNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E97AE91ADB5EF3007AFD48 /* StarFieldNode.m */; };
+		69E97AED1ADB69D6007AFD48 /* Thrust.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69E97AEB1ADB69D5007AFD48 /* Thrust.sks */; };
+		69E97AEE1ADB69D6007AFD48 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E97AEC1ADB69D6007AFD48 /* spark.png */; };
+		69E97AF11ADD3243007AFD48 /* obstacleExplode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69E97AF01ADD3243007AFD48 /* obstacleExplode.sks */; };
+		69E97AF31ADD3256007AFD48 /* shipExplode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 69E97AF21ADD3256007AFD48 /* shipExplode.sks */; };
+		69E97AF61ADD36CE007AFD48 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E97AF51ADD36CE007AFD48 /* StartViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69D809CD1AD5F4DC004CD596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69D809A61AD5F4DC004CD596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69D809AD1AD5F4DC004CD596;
+			remoteInfo = SpaceRun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		694A95521ADF2D17008578B8 /* OpeningScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeningScene.h; sourceTree = "<group>"; };
+		694A95531ADF2D17008578B8 /* OpeningScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpeningScene.m; sourceTree = "<group>"; };
+		694A95551ADF3332008578B8 /* SKScene+Unarchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKScene+Unarchive.h"; sourceTree = "<group>"; };
+		694A95561ADF3889008578B8 /* GameOverNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverNode.h; sourceTree = "<group>"; };
+		694A95571ADF3889008578B8 /* GameOverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverNode.m; sourceTree = "<group>"; };
+		694A955A1ADFD65D008578B8 /* HUDNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDNode.h; sourceTree = "<group>"; };
+		694A955B1ADFD65D008578B8 /* HUDNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDNode.m; sourceTree = "<group>"; };
+		6997D0271AD6172A002389B5 /* shipExplode.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shipExplode.m4a; sourceTree = "<group>"; };
+		6997D0291AD61733002389B5 /* shoot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shoot.m4a; sourceTree = "<group>"; };
+		6997D02B1AD6173B002389B5 /* obstacleExplode.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = obstacleExplode.m4a; sourceTree = "<group>"; };
+		6997D02E1AD617C0002389B5 /* SKNode+Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+Math.h"; sourceTree = "<group>"; };
+		69D809AE1AD5F4DC004CD596 /* SpaceRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D809B21AD5F4DC004CD596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D809B31AD5F4DC004CD596 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69D809B51AD5F4DC004CD596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69D809B61AD5F4DC004CD596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69D809B81AD5F4DC004CD596 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		69D809B91AD5F4DC004CD596 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		69D809BB1AD5F4DC004CD596 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		69D809BD1AD5F4DC004CD596 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		69D809BE1AD5F4DC004CD596 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		69D809C11AD5F4DC004CD596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69D809C31AD5F4DC004CD596 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		69D809C61AD5F4DC004CD596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		69D809CC1AD5F4DC004CD596 /* SpaceRunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceRunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D809D11AD5F4DC004CD596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D809D21AD5F4DC004CD596 /* SpaceRunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceRunTests.m; sourceTree = "<group>"; };
+		69E97AE81ADB5EF3007AFD48 /* StarFieldNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarFieldNode.h; sourceTree = "<group>"; };
+		69E97AE91ADB5EF3007AFD48 /* StarFieldNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarFieldNode.m; sourceTree = "<group>"; };
+		69E97AEB1ADB69D5007AFD48 /* Thrust.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Thrust.sks; sourceTree = "<group>"; };
+		69E97AEC1ADB69D6007AFD48 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		69E97AEF1ADB6C47007AFD48 /* SKEmitterNode+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+File.h"; sourceTree = "<group>"; };
+		69E97AF01ADD3243007AFD48 /* obstacleExplode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = obstacleExplode.sks; sourceTree = "<group>"; };
+		69E97AF21ADD3256007AFD48 /* shipExplode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = shipExplode.sks; sourceTree = "<group>"; };
+		69E97AF41ADD36CE007AFD48 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		69E97AF51ADD36CE007AFD48 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69D809AB1AD5F4DC004CD596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D809C91AD5F4DC004CD596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		694A95591ADF3B41008578B8 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				69E97AE81ADB5EF3007AFD48 /* StarFieldNode.h */,
+				69E97AE91ADB5EF3007AFD48 /* StarFieldNode.m */,
+				694A95561ADF3889008578B8 /* GameOverNode.h */,
+				694A95571ADF3889008578B8 /* GameOverNode.m */,
+				694A955A1ADFD65D008578B8 /* HUDNode.h */,
+				694A955B1ADFD65D008578B8 /* HUDNode.m */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		6997D0261AD6171F002389B5 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				6997D02B1AD6173B002389B5 /* obstacleExplode.m4a */,
+				6997D0291AD61733002389B5 /* shoot.m4a */,
+				6997D0271AD6172A002389B5 /* shipExplode.m4a */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		6997D02D1AD6175B002389B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6997D02E1AD617C0002389B5 /* SKNode+Math.h */,
+				69E97AEF1ADB6C47007AFD48 /* SKEmitterNode+File.h */,
+				694A95551ADF3332008578B8 /* SKScene+Unarchive.h */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		69D809A51AD5F4DC004CD596 = {
+			isa = PBXGroup;
+			children = (
+				69D809B01AD5F4DC004CD596 /* SpaceRun */,
+				69D809CF1AD5F4DC004CD596 /* SpaceRunTests */,
+				69D809AF1AD5F4DC004CD596 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69D809AF1AD5F4DC004CD596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69D809AE1AD5F4DC004CD596 /* SpaceRun.app */,
+				69D809CC1AD5F4DC004CD596 /* SpaceRunTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69D809B01AD5F4DC004CD596 /* SpaceRun */ = {
+			isa = PBXGroup;
+			children = (
+				6997D02D1AD6175B002389B5 /* Extensions */,
+				694A95591ADF3B41008578B8 /* Nodes */,
+				69D809B51AD5F4DC004CD596 /* AppDelegate.h */,
+				69D809B61AD5F4DC004CD596 /* AppDelegate.m */,
+				69D809B81AD5F4DC004CD596 /* GameScene.h */,
+				69D809B91AD5F4DC004CD596 /* GameScene.m */,
+				694A95521ADF2D17008578B8 /* OpeningScene.h */,
+				694A95531ADF2D17008578B8 /* OpeningScene.m */,
+				69D809BD1AD5F4DC004CD596 /* GameViewController.h */,
+				69D809BE1AD5F4DC004CD596 /* GameViewController.m */,
+				69E97AF41ADD36CE007AFD48 /* StartViewController.h */,
+				69E97AF51ADD36CE007AFD48 /* StartViewController.m */,
+				69D809B11AD5F4DC004CD596 /* Supporting Files */,
+			);
+			path = SpaceRun;
+			sourceTree = "<group>";
+		};
+		69D809B11AD5F4DC004CD596 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69E97AF71ADD3F88007AFD48 /* Particles */,
+				6997D0261AD6171F002389B5 /* Sound */,
+				69D809C31AD5F4DC004CD596 /* Images.xcassets */,
+				69D809BB1AD5F4DC004CD596 /* GameScene.sks */,
+				69D809C01AD5F4DC004CD596 /* Main.storyboard */,
+				69D809C51AD5F4DC004CD596 /* LaunchScreen.xib */,
+				69D809B21AD5F4DC004CD596 /* Info.plist */,
+				69D809B31AD5F4DC004CD596 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69D809CF1AD5F4DC004CD596 /* SpaceRunTests */ = {
+			isa = PBXGroup;
+			children = (
+				69D809D21AD5F4DC004CD596 /* SpaceRunTests.m */,
+				69D809D01AD5F4DC004CD596 /* Supporting Files */,
+			);
+			path = SpaceRunTests;
+			sourceTree = "<group>";
+		};
+		69D809D01AD5F4DC004CD596 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69D809D11AD5F4DC004CD596 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69E97AF71ADD3F88007AFD48 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				69E97AEC1ADB69D6007AFD48 /* spark.png */,
+				69E97AEB1ADB69D5007AFD48 /* Thrust.sks */,
+				69E97AF01ADD3243007AFD48 /* obstacleExplode.sks */,
+				69E97AF21ADD3256007AFD48 /* shipExplode.sks */,
+			);
+			name = Particles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69D809AD1AD5F4DC004CD596 /* SpaceRun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D809D61AD5F4DC004CD596 /* Build configuration list for PBXNativeTarget "SpaceRun" */;
+			buildPhases = (
+				69D809AA1AD5F4DC004CD596 /* Sources */,
+				69D809AB1AD5F4DC004CD596 /* Frameworks */,
+				69D809AC1AD5F4DC004CD596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceRun;
+			productName = SpaceRun;
+			productReference = 69D809AE1AD5F4DC004CD596 /* SpaceRun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69D809CB1AD5F4DC004CD596 /* SpaceRunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D809D91AD5F4DC004CD596 /* Build configuration list for PBXNativeTarget "SpaceRunTests" */;
+			buildPhases = (
+				69D809C81AD5F4DC004CD596 /* Sources */,
+				69D809C91AD5F4DC004CD596 /* Frameworks */,
+				69D809CA1AD5F4DC004CD596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69D809CE1AD5F4DC004CD596 /* PBXTargetDependency */,
+			);
+			name = SpaceRunTests;
+			productName = SpaceRunTests;
+			productReference = 69D809CC1AD5F4DC004CD596 /* SpaceRunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69D809A61AD5F4DC004CD596 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "George Heeres";
+				TargetAttributes = {
+					69D809AD1AD5F4DC004CD596 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					69D809CB1AD5F4DC004CD596 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 69D809AD1AD5F4DC004CD596;
+					};
+				};
+			};
+			buildConfigurationList = 69D809A91AD5F4DC004CD596 /* Build configuration list for PBXProject "SpaceRun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69D809A51AD5F4DC004CD596;
+			productRefGroup = 69D809AF1AD5F4DC004CD596 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69D809AD1AD5F4DC004CD596 /* SpaceRun */,
+				69D809CB1AD5F4DC004CD596 /* SpaceRunTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69D809AC1AD5F4DC004CD596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6997D02C1AD6173B002389B5 /* obstacleExplode.m4a in Resources */,
+				69E97AF31ADD3256007AFD48 /* shipExplode.sks in Resources */,
+				69E97AEE1ADB69D6007AFD48 /* spark.png in Resources */,
+				69D809C71AD5F4DC004CD596 /* LaunchScreen.xib in Resources */,
+				69D809C41AD5F4DC004CD596 /* Images.xcassets in Resources */,
+				69E97AED1ADB69D6007AFD48 /* Thrust.sks in Resources */,
+				6997D0281AD6172A002389B5 /* shipExplode.m4a in Resources */,
+				69D809BC1AD5F4DC004CD596 /* GameScene.sks in Resources */,
+				6997D02A1AD61733002389B5 /* shoot.m4a in Resources */,
+				69E97AF11ADD3243007AFD48 /* obstacleExplode.sks in Resources */,
+				69D809C21AD5F4DC004CD596 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D809CA1AD5F4DC004CD596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69D809AA1AD5F4DC004CD596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694A95541ADF2D17008578B8 /* OpeningScene.m in Sources */,
+				69D809BF1AD5F4DC004CD596 /* GameViewController.m in Sources */,
+				69E97AEA1ADB5EF3007AFD48 /* StarFieldNode.m in Sources */,
+				69D809B71AD5F4DC004CD596 /* AppDelegate.m in Sources */,
+				69E97AF61ADD36CE007AFD48 /* StartViewController.m in Sources */,
+				694A95581ADF3889008578B8 /* GameOverNode.m in Sources */,
+				694A955C1ADFD65D008578B8 /* HUDNode.m in Sources */,
+				69D809BA1AD5F4DC004CD596 /* GameScene.m in Sources */,
+				69D809B41AD5F4DC004CD596 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D809C81AD5F4DC004CD596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D809D31AD5F4DC004CD596 /* SpaceRunTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69D809CE1AD5F4DC004CD596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69D809AD1AD5F4DC004CD596 /* SpaceRun */;
+			targetProxy = 69D809CD1AD5F4DC004CD596 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69D809C01AD5F4DC004CD596 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D809C11AD5F4DC004CD596 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69D809C51AD5F4DC004CD596 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D809C61AD5F4DC004CD596 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69D809D41AD5F4DC004CD596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69D809D51AD5F4DC004CD596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69D809D71AD5F4DC004CD596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpaceRun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		69D809D81AD5F4DC004CD596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpaceRun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		69D809DA1AD5F4DC004CD596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpaceRunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceRun.app/SpaceRun";
+			};
+			name = Debug;
+		};
+		69D809DB1AD5F4DC004CD596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpaceRunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceRun.app/SpaceRun";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69D809A91AD5F4DC004CD596 /* Build configuration list for PBXProject "SpaceRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D809D41AD5F4DC004CD596 /* Debug */,
+				69D809D51AD5F4DC004CD596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D809D61AD5F4DC004CD596 /* Build configuration list for PBXNativeTarget "SpaceRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D809D71AD5F4DC004CD596 /* Debug */,
+				69D809D81AD5F4DC004CD596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D809D91AD5F4DC004CD596 /* Build configuration list for PBXNativeTarget "SpaceRunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D809DA1AD5F4DC004CD596 /* Debug */,
+				69D809DB1AD5F4DC004CD596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69D809A61AD5F4DC004CD596 /* Project object */;
+}
