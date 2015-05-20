@@ -48,7 +48,7 @@ self.backgroundColor = [UIColor colorWithRed:255/255.0 green:102/255.0 blue:178/
   self.textView.font = [UIFont fontWithName:@"AvenirNext-Medium" size:20];
   self.textView.text = @"A distress call comes in from thousands of light "
                         "years away. The colony is in jeopardy and needs "
-                        "your help. Enemy ships and a meteor shower "
+                        "your help. Enemy kitties and a badtsmaru shower "
                         "threaten the work of the galaxy's greatest "
                         "scientific minds.\n\n"
                         "Will you be able to reach "
