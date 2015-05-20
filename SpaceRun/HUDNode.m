@@ -47,7 +47,7 @@
 
   SKLabelNode *scoreTitle = [SKLabelNode labelNodeWithFontNamed:@"AvenirNext-Medium"];
   scoreTitle.fontSize = 12;
-  scoreTitle.fontColor = [SKColor whiteColor];
+  scoreTitle.fontColor = [SKColor greenColor];
   scoreTitle.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
   scoreTitle.verticalAlignmentMode = SKLabelVerticalAlignmentModeBottom;
   scoreTitle.text = @"SCORE";

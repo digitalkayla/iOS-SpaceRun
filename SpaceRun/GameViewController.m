@@ -25,8 +25,7 @@
   skView.ignoresSiblingOrder = YES;
   
   SKScene *blackScene = [[SKScene alloc] initWithSize:skView.bounds.size];
-  blackScene.backgroundColor = [SKColor blackColor];
-  [skView presentScene:blackScene];
+  blackScene.backgroundColor = [UIColor colorWithRed:255/255.0 green:102/255.0 blue:178/255.0 alpha:1.0];  [skView presentScene:blackScene];
 }
 
 -(void) viewDidAppear:(BOOL)animated {

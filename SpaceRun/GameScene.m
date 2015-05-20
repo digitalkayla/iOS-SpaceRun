@@ -58,7 +58,7 @@
 
 -(id) initWithCoder:(NSCoder *)aDecoder {
   if (self = [super initWithCoder:aDecoder]) {
-    self.backgroundColor = [SKColor blackColor];
+    self.backgroundColor = [UIColor colorWithRed:255/255.0 green:102/255.0 blue:178/255.0 alpha:1.0];
     
     //godMode = YES;
     log = NO;

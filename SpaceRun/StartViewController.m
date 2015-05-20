@@ -25,7 +25,7 @@
   _backgroundView = [[SKView alloc] initWithFrame:self.view.bounds];
   
   SKScene* scene = [[SKScene alloc] initWithSize:self.view.bounds.size];
-  scene.backgroundColor = [SKColor blackColor];
+  scene.backgroundColor = [UIColor colorWithRed:255/255.0 green:102/255.0 blue:178/255.0 alpha:1.0];
   scene.scaleMode = SKSceneScaleModeAspectFill;
 
   SKNode *starField = [StarFieldNode node];

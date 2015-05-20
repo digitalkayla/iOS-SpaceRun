@@ -24,8 +24,10 @@
   
   self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(endScene)];
   [self.view addGestureRecognizer:self.tapGesture];
-  
-  self.backgroundColor = [SKColor blackColor];
+    
+self.backgroundColor = [UIColor colorWithRed:255/255.0 green:102/255.0 blue:178/255.0 alpha:1.0];
+
+    
   StarFieldNode *starField = [StarFieldNode node];
   [self addChild:starField];
   
