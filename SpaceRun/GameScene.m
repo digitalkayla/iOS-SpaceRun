@@ -361,7 +361,7 @@
         HUDNode* hud = (HUDNode*) [self childNodeWithName:@"hud"];
         NSInteger score = 10 * hud.elapsedTime * (self.difficulty + 1);
         [hud addPoints:score];
-        if (log) NSLog(@"Value of destroyed object was %d", score);
+        if (log) NSLog(@"Value of destroyed object was %ld", (long)score);
         
         *stop = YES;
       }

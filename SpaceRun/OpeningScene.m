@@ -46,11 +46,11 @@ self.backgroundColor = [UIColor colorWithRed:255/255.0 green:102/255.0 blue:178/
   self.textView.backgroundColor = [UIColor clearColor];
   self.textView.textColor = [UIColor yellowColor];
   self.textView.font = [UIFont fontWithName:@"AvenirNext-Medium" size:20];
-  self.textView.text = @"A distress call comes in from thousands of light "
-                        "years away. The colony is in jeopardy and needs "
+  self.textView.text = @"A distress meow comes in from thousands of light "
+                        "years away. The kittany is in jeopardy and needs "
                         "your help. Enemy kitties and a badtsmaru shower "
                         "threaten the work of the galaxy's greatest "
-                        "scientific minds.\n\n"
+                        "scientific kitty minds.\n\n"
                         "Will you be able to reach "
                         "them in time to save the research?\n\n"
                         "Or has the galaxy lost it's only hope?";
